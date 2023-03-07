@@ -19,10 +19,11 @@ LOAD_POST=1
 
 
 
-THETARESOLUTION=6#6
-KERNEL_SIZE=9#7
+THETARESOLUTION=6
+KERNEL_SIZE=9
 
-usingUnet=1
+usingUnet=0
+
 if not usingUnet:
     Premodel=DexiNed().cuda(0)
     Premodel.load_state_dict(torch.load("10_model.pth"))
