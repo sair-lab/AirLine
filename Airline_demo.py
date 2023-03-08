@@ -51,8 +51,8 @@ if __name__ == '__main__':
     tempMem=np.zeros((50000,2),dtype=np.int32)
     tempMem2=np.zeros((2,300000,2),dtype=np.int32)
 
-    path='D:\\v1.1\\v1.1\\test'
-    path=r'D:\Downloads\new_euroc_style\new_euroc_style\cam1\data'
+    sequencePath='D:\\v1.1\\v1.1\\test'
+    sequencePath=r'D:\Downloads\new_euroc_style\new_euroc_style\cam1\data'
     #path='D:\Downloads\subt\handheld0\cam0\data'
     #path='fortest\\compare'
     'G:\OD\OneDrive - Georgia Institute of Technology\\1-codes\\17net\\fortest\\as'
@@ -61,9 +61,9 @@ if __name__ == '__main__':
     demo=2
     showDuplicate=0
     play=1000
-    for o in os.listdir(path):
+    for o in os.listdir(sequencePath):
         linenum=0
-        rx1=cv2.imread(path+'\\'+o,cv2.IMREAD_UNCHANGED)
+        rx1=cv2.imread(sequencePath+'\\'+o,cv2.IMREAD_UNCHANGED)
         res=16
         dscale=1
         if demo:
