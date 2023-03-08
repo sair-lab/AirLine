@@ -1,7 +1,8 @@
 # AirLine - demo code
 simply change the directory variable _sequencePath_ and run Airline_demo.py in any way
 youtube link: https://youtu.be/EKDx3Z9qYUQ
-# training code and checkpoint waiting to be uploaded
+# !training code and checkpoint waiting to be uploaded!
+may have issue running on MacOS given dependency of dll libraries
 
 # Abstract
 Xiao Lin, Chen Wang.
