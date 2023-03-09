@@ -1,9 +1,11 @@
 # AirLine - demo code
-simply change the directory variable _sequencePath_ and run Airline_demo.py in any way
+1. download unet or dexined checkpoints from https://drive.google.com/drive/folders/1Fe6DD38mai1ahvKm3bsHdTwLJCI14KeO?usp=share_link and put it in the same directory that the code locates
+2. specify if using Unet or Dexined using variable _usingUnet_
+3. change the directory variable _sequencePath_ and run Airline_demo.py in any way you want
 
 youtube link: https://youtu.be/EKDx3Z9qYUQ
-# !training code and checkpoint waiting to be uploaded!
-This code may have issue running on MacOS given dependency of dll libraries
+
+note: This code may have issue running on MacOS given dependency of dll libraries
 
 # Abstract
 Xiao Lin, Chen Wang.

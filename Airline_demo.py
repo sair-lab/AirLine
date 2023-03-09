@@ -21,10 +21,10 @@ usingUnet=0
 
 if not usingUnet:
     Premodel=DexiNed().cuda(0)
-    Premodel.load_state_dict(torch.load("10_model.pth"))
+    Premodel.load_state_dict(torch.load("dexi.pth"))
 else:
     Premodel=UNet(1,1).cuda(0)
-    Premodel.load_state_dict(torch.load('UFFF'))
+    Premodel.load_state_dict(torch.load('unet.pth'))
 
 
 def init_OD(THETARESOLUTION,KERNEL_SIZE):
