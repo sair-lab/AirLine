@@ -1,9 +1,5 @@
 
-import copy
-from imp import PKG_DIRECTORY
 from timeit import timeit
-from turtle import showturtle
-from numpy import pad
 import torch
 from unet import *
 import CRG.extractC.CRG as crg
@@ -56,16 +52,17 @@ if __name__ == '__main__':
     allLength=0.0
 
     dataset="wireframe"
-    #dataset="yorkurban"
+    dataset="yorkurban"
 
     if dataset=="yorkurban":
         path='Datasets\\YorkUrban'
         edgeDetector=DexiNed().cuda(0)
-        edgeDetector.load_state_dict(torch.load("checkpoints//dexi.pth"))
+        edgeDetector.load_state_dict(torch.load('checkpoints//dexi.pth'))
         usingUnet=0
         config={
-            "edgeThresh":-2,
+            "edgeThresh":0,
             "simThresh":0.8,
+            "pixelNumThresh":10,
         }
     elif dataset=="wireframe":
         path='Datasets\\Wireframe'
@@ -73,9 +70,9 @@ if __name__ == '__main__':
         edgeDetector.load_state_dict(torch.load('checkpoints//unet.pth'))
         usingUnet=1
         config={
-            "model":DexiNed().cuda(0),
-            "edgeThresh":-2.1,
+            "edgeThresh":-2.5,
             "simThresh":0.7,
+            "pixelNumThresh":10,
         }
     else:
         raise Exception("dataset not specified!")
@@ -136,14 +133,12 @@ if __name__ == '__main__':
         tempMem3=np.zeros((3000,2,2),dtype=np.float32)
         
         
-        if usingUnet:
-            edgeNp=(edgeNp>config["edgeThresh"]).astype(np.uint8)*255
-        else:
-            edgeNp=(edgeNp>0.5).astype(np.uint8)*255
+        edgeNp=(edgeNp>config["edgeThresh"]).astype(np.uint8)*255
+
         cv2.imshow('edge',edgeNp)
 
         
-        rawLineNum=crg.desGrow(outMap,edgeNp,ODes[0].detach().cpu().numpy(),out,config["simThresh"],10,tempMem,tempMem2,tempMem3,THETARESOLUTION)# in this model and configuration, we use 0.7 as the threshold
+        rawLineNum=crg.desGrow(outMap,edgeNp,ODes[0].detach().cpu().numpy(),out,config["simThresh"],config["pixelNumThresh"],tempMem,tempMem2,tempMem3,THETARESOLUTION)# in this model and configuration, we use 0.7 as the threshold
 
 
         cv2.imshow('seg',outMap)# display the segmentation result
