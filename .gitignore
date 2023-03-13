@@ -130,3 +130,6 @@ dmypy.json
 datasets/*
 
 *.pth
+*.exp
+*.lib
+*.pdb
