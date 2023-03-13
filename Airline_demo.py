@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 from unet import *
 import os
-import extract.extractC2 as EC
+import CRG.extractC.CRG as crg
 # import the C++ library for CRG and line parameterization
 
 from deximodel import DexiNed
@@ -21,10 +21,10 @@ usingUnet=0
 
 if not usingUnet:
     Premodel=DexiNed().cuda(0)
-    Premodel.load_state_dict(torch.load("dexi.pth"))
+    Premodel.load_state_dict(torch.load("checkpoints//dexi.pth"))
 else:
     Premodel=UNet(1,1).cuda(0)
-    Premodel.load_state_dict(torch.load('unet.pth'))
+    Premodel.load_state_dict(torch.load('checkpoints//unet.pth'))
 
 
 def init_OD(THETARESOLUTION,KERNEL_SIZE):
@@ -36,7 +36,7 @@ def init_OD(THETARESOLUTION,KERNEL_SIZE):
         y=(np.sin(angle/180*3.1415926)*50).astype(np.int32)
         
         cv2.line(kernel,(KERNEL_SIZE//2-x,KERNEL_SIZE//2-y),(KERNEL_SIZE//2+x,KERNEL_SIZE//2+y),1,1)
-        OrientationDetector.weight.data[i]=torch.tensor(kernel)
+        OD.weight.data[i]=torch.tensor(kernel)
         cv2.imshow("k",cv2.resize(kernel,(100,100),interpolation=0))
     return OD
 
@@ -119,9 +119,9 @@ if __name__ == '__main__':
         cv2.imshow('edge',edgeNp)
         
         if not demo:
-            linenum=EC.desGrow(outMap,edgeNp,THETADes[0].detach().cpu().numpy(),out,0.94,40,tempMem,tempMem2,tempMem3,THETARESOLUTION)#lineDetection1.detach().cpu().numpy()[0,0]
+            linenum=crg.desGrow(outMap,edgeNp,THETADes[0].detach().cpu().numpy(),out,0.94,40,tempMem,tempMem2,tempMem3,THETARESOLUTION)#lineDetection1.detach().cpu().numpy()[0,0]
         else:
-            linenum=EC.desGrow(outMap,edgeNp,THETADes[0].detach().cpu().numpy(),out,0.9,10,tempMem,tempMem2,tempMem3,THETARESOLUTION)#lineDetection1.detach().cpu().numpy()[0,0]
+            linenum=crg.desGrow(outMap,edgeNp,THETADes[0].detach().cpu().numpy(),out,0.9,10,tempMem,tempMem2,tempMem3,THETARESOLUTION)#lineDetection1.detach().cpu().numpy()[0,0]
 
 
 

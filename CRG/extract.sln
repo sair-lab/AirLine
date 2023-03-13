@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "extractC", "extractC\extractC.vcxproj", "{8C4625BA-3930-479D-A6D5-E43311F897D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		new|x64 = new|x64
+		new|x86 = new|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Debug|x64.ActiveCfg = Debug|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Debug|x64.Build.0 = Debug|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Debug|x86.ActiveCfg = Debug|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Debug|x86.Build.0 = Debug|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.new|x64.ActiveCfg = new|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.new|x64.Build.0 = new|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.new|x86.ActiveCfg = new|Win32
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.new|x86.Build.0 = new|Win32
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Release|x64.ActiveCfg = Release|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Release|x64.Build.0 = Release|x64
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Release|x86.ActiveCfg = Release|Win32
+		{8C4625BA-3930-479D-A6D5-E43311F897D2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD968718-C4B2-432A-B175-908C42AEE4BB}
+	EndGlobalSection
+EndGlobal
