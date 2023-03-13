@@ -1,13 +1,14 @@
-# AirLine - demo code
-1. download unet and dexined [checkpoints](https://drive.google.com/drive/folders/1Fe6DD38mai1ahvKm3bsHdTwLJCI14KeO?usp=share_link) and put it in the checkpoints folder
-2. specify if using Unet or Dexined using variable _usingUnet_
-3. change the directory variable _sequencePath_ and run Airline_demo.py in any way you want
+# AirLine - using demo code
+1. download unet and dexiNed [checkpoints](https://drive.google.com/drive/folders/11TQxJjpBoZVKcQ0Pmb6GH3h0qQk4CnNe?usp=sharing) and put it in the checkpoints folder
+2. specify if using Unet or Dexined using variable _usingUnet_ in AirLine_demo.py, we recommand using dexiNed.
+3. specify _sequencePath_ which should be a directory containing image sequence to test on.
+3. run Airline_demo.py in any way you want.
 
-youtube link: https://youtu.be/EKDx3Z9qYUQ
+youtube [demo video](https://youtu.be/EKDx3Z9qYUQ)
 
 note: This code may have issue running on MacOS given dependency of dll libraries
 
-*The directory should look like:
+*If you wish to run testing, download [test set](https://drive.google.com/drive/folders/1uprorwuIq8vOKYElQ27MLTw_f8W2sIoW?usp=sharing) and set up the directory which should look like:
 
     ├──AirLine
         ├── checkpoints
