@@ -36,10 +36,10 @@ The feature adjacency is established via feature cross-correlation between <img 
 
 ## Video
 
-{% youtube EKDx3Z9qYUQ %}
+* **[Youtube](https://www.youtube.com/watch?v=EKDx3Z9qYUQ)**
 
 ## Source Code
 
-* **[Lifelong Graph Learning (Citation Graph)](https://github.com/sair-lab/AirLine)**
+* **[AirLine](https://github.com/sair-lab/AirLine)**
 
 ## Publications
