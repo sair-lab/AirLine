@@ -9,6 +9,14 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
     <figcaption>
         A qualitative comparison across difference methods on untrained samples.
     </figcaption>
+    <img src="/img/vsLSD.gif" />
+    <figcaption>
+        A qualitative comparison across difference methods on untrained samples.
+    </figcaption>
+    <img src="/img/qualitativecomp.gif" />
+    <figcaption>
+        A qualitative comparison across difference methods on untrained samples.
+    </figcaption>
     
 </figure>
 
@@ -29,7 +37,6 @@ As shown above, AirLine is a learnable edge-based line detection architecture th
     <img src="/img/pipeline.gif"/>
 </figure>
 
-The feature adjacency is established via feature cross-correlation between <img src="https://render.githubusercontent.com/render/math?math=a"> and its neighbors <img src="https://render.githubusercontent.com/render/math?math=\mathcal{N}(a) = \{a, b, c, d, e\}"> to model feature “interaction.”  This makes the lifelong learning techniques for CNN applicable to GNN, as the new nodes in a regular graph become individual training samples.
 
 <figure>
     <figcaption>
