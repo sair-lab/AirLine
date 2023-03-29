@@ -7,15 +7,15 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
 <figure>
     <img src="/img/cp2.png" />
     <figcaption>
-        A qualitative comparison across difference methods on untrained samples.
+        A qualitative comparison across difference methods on untrained images.
     </figcaption>
     <img src="/img/vsLSD.gif" />
     <figcaption>
-        A qualitative comparison across difference methods on untrained samples.
+        this gif showcases thenstability and great generalization ability of AirLine compared to LSD.
     </figcaption>
     <img src="/img/qualitativecomp.gif" />
     <figcaption>
-        A qualitative comparison across difference methods on untrained samples.
+        A qualitative comparison across difference methods on untrained sequence from UMA_VI.
     </figcaption>
     
 </figure>
