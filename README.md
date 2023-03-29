@@ -7,14 +7,15 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
     <figcaption>
         A temporally growing graph, which is challenging to learn the graph in a sequential way.
     </figcaption>
+    <img src="/img/pipline.png" />
+    <figcaption>
+        A temporally growing graph, which is challenging to learn the graph in a sequential way.
+    </figcaption>
+
+
 </figure>
 
-Existing lifelong learning techniques are mostly designed for convolutional neural networks (CNNs), which *assumes the new data samples are independent*. However, in lifelong graph learning, *nodes are connected and dynamically added*.
-In this work, we have an important observation:
-
-* **The number of nodes increases dynamically, while the number of node features is stable.**
-
-Therefore, we introduce feature graph, which **takes features as nodes and turns nodes into independent graphs**. This successfully converts the original problem of node classification to graph classification, in which the increasing nodes are turned into independent training samples.
+As shown above, AirLine is a learnable edge-based line detection architecture that is composed of four modules including edge detection, orientation detection, conditional region-grow, and line parameterization. We next present their motivation and detailed process, respectively.
 
 <figure>
     <img src="/img/pipline.gif"/>
