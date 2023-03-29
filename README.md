@@ -18,7 +18,7 @@ link-new-tab: true
 Graph neural networks (GNNs) are powerful models for many graph-structured tasks. Existing models often assume that a complete structure of a graph is available during training. However, graph-structured data is often formed in a streaming fashion so that learning a graph continuously is often necessary.
 
 <figure>
-    <img src="/img/image (1).png" />
+    <img src="/img/cp2.pdf" />
     <figcaption>
         A temporally growing graph, which is challenging to learn the graph in a sequential way.
     </figcaption>
