@@ -7,7 +7,7 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
     <figcaption>
         A temporally growing graph, which is challenging to learn the graph in a sequential way.
     </figcaption>
-    <img src="/img/pipline.png" />
+    <img src="/img/pipeline.png" />
     <figcaption>
         A temporally growing graph, which is challenging to learn the graph in a sequential way.
     </figcaption>
@@ -18,7 +18,7 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
 As shown above, AirLine is a learnable edge-based line detection architecture that is composed of four modules including edge detection, orientation detection, conditional region-grow, and line parameterization. We next present their motivation and detailed process, respectively.
 
 <figure>
-    <img src="/img/pipline.gif"/>
+    <img src="/img/pipeline.gif"/>
     <figcaption>
         Feature graph takes the features as nodes and turns nodes into graphs, resulting in a graph predictor instead of the node predictor. Take the node a with label <img src="https://render.githubusercontent.com/render/math?math=\mathbf{z}_a"> in the regular graph <img src="https://render.githubusercontent.com/render/math?math=\mathcal{G}"> as an example, its features <img src="https://render.githubusercontent.com/render/math?math=x_a = [1, 0, 0, 1]">  are nodes <img src="https://render.githubusercontent.com/render/math?math=\{a1, a2, a3, a4\}"> in feature graph <img src="https://render.githubusercontent.com/render/math?math=\mathcal{G}^F">. 
     </figcaption>
