@@ -1,24 +1,9 @@
----
-layout: post
-title: "Lifelong Graph Learning"
-date: 2022-3-5 12:00:00
-categories: research
-description: "Lifelong Graph Learning"
-author: "Chen Wang"
-published: true
-sidebar:  false
-permalink: /lgl/
-image: /img/posts/2022-03-05-lgl/matching.jpg
-datatable: true
-hero_height: is-small
-title_image: None
-link-new-tab: true
----
 
-Graph neural networks (GNNs) are powerful models for many graph-structured tasks. Existing models often assume that a complete structure of a graph is available during training. However, graph-structured data is often formed in a streaming fashion so that learning a graph continuously is often necessary.
+
+Line detection is widely used in many robotic tasks such as scene recognition, 3D reconstruction, and simultaneous localization and mapping (SLAM). Compared to points, lines can provide both low-level and high-level geometrical information for downstream tasks. In this paper, we propose a novel edge-based line detection algorithm, AirLine, which can be applied to various tasks. In contrast to existing learnable endpoint-based methods which are sensitive to the geometrical condition of environments, AirLine can extract line segments directly from edges, resulting in a better generalization ability for unseen environments. Also to balance efficiency and accuracy, we introduce a region-grow algorithm and local edge voting scheme for line parameterization. To the best of our knowledge, AirLine is one of the first learnable edge-based line detection methods. Our extensive experiments show that it retains state-of-the-art-level precision yet with a $3-80\times$ runtime acceleration compared to other learning-based methods, which is critical for low-power robots.
 
 <figure>
-    <img src="/img/cp2.pdf" />
+    <img src="/img/cp2.png" />
     <figcaption>
         A temporally growing graph, which is challenging to learn the graph in a sequential way.
     </figcaption>
@@ -32,7 +17,7 @@ In this work, we have an important observation:
 Therefore, we introduce feature graph, which **takes features as nodes and turns nodes into independent graphs**. This successfully converts the original problem of node classification to graph classification, in which the increasing nodes are turned into independent training samples.
 
 <figure>
-    <img src="/img/posts/2022-03-05-lgl/feature-graph.jpg"/>
+    <img src="/img/pipline.gif"/>
     <figcaption>
         Feature graph takes the features as nodes and turns nodes into graphs, resulting in a graph predictor instead of the node predictor. Take the node a with label <img src="https://render.githubusercontent.com/render/math?math=\mathbf{z}_a"> in the regular graph <img src="https://render.githubusercontent.com/render/math?math=\mathcal{G}"> as an example, its features <img src="https://render.githubusercontent.com/render/math?math=x_a = [1, 0, 0, 1]">  are nodes <img src="https://render.githubusercontent.com/render/math?math=\{a1, a2, a3, a4\}"> in feature graph <img src="https://render.githubusercontent.com/render/math?math=\mathcal{G}^F">. 
     </figcaption>
@@ -94,10 +79,4 @@ methods, including GCN, APPNP, and GAT. It also achieves a much higher final per
 
 * **[Lifelong Graph Learning (Citation Graph)](https://github.com/wang-chen/LGL)**
 
-* **[Lifelong Graph Learning (Action Recognition)](https://github.com/wang-chen/lgl-action-recognition)**
-
-* **[Lifelong Graph Learning (Feature Matching)](https://github.com/wang-chen/lgl-feature-matching)**
-
 ## Publications
-
-{% bibliography --query @*[title=Lifelong Graph Learning] %}
