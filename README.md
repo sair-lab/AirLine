@@ -27,8 +27,6 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
     <figcaption>
         A figure of Airline's pipeline
     </figcaption>
-
-
 </figure>
 
 As shown above, AirLine is a learnable edge-based line detection architecture that is composed of four modules including edge detection, orientation detection, conditional region-grow, and line parameterization. We next present their motivation and detailed process, respectively. We made a video to demonstrate each stage.
@@ -36,6 +34,12 @@ As shown above, AirLine is a learnable edge-based line detection architecture th
 <figure>
     <img src="/img/pipeline.gif"/>
 </figure>
+By using edge-based learning line detection methods, AirLine has achieved state-of-art-level precision and significant efficiency and runtime boost.
+<figure>
+    <img src="/img/wffig.png"/>
+    <img src="/img/yufig.png"/>
+</figure>
+
 
 ## Video
 
