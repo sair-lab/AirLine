@@ -36,18 +36,14 @@ As shown above, AirLine is a learnable edge-based line detection architecture th
 <figure>
     <img src="/img/pipeline.gif"/>
 </figure>
-By using edge-based learning line detection methods, AirLine has achieved state-of-art-level precision and significant efficiency and runtime boost.
+By using edge-based learnable line detection approaches, AirLine has achieved state-of-art-level precision and significant efficiency and runtime boost.
 <figure>
     <img src="/img/wffig.png" width=48%><img src="/img/yufig.png" width=48%/>
 </figure>
 
 
-## Video
+## Video & Source Code
 
 * **[Youtube](https://www.youtube.com/watch?v=EKDx3Z9qYUQ)**
-
-## Source Code
-
 * **[AirLine](https://github.com/sair-lab/AirLine)**
 
-## Publications
