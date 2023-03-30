@@ -6,15 +6,15 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
 
 <figure>
     <figcaption>
-        The figure below provides a qualitative comparison across difference methods on untrained images.
+        The figure below provides a qualitative comparison across difference methods on untrained images with overlap detection highlighted in red .The first row is a distant view of city and the second row is street view, while the third to fifth rows are from UMA-VI dataset of subterranean environments.
     </figcaption>
     <img src="/img/cp2.png" />
     <figcaption>
-        this gif showcases thenstability and great generalization ability of AirLine compared to LSD.
+        This gif showcases thenstability and great generalization ability of AirLine compared to LSD. In the first screenshot, both LSD and AirLine captured the line circled in red, while LSD lost track in the following frames, which is a good evidence of Airline's stability and robustness.
     </figcaption>
     <img src="/img/vsLSD.gif" />
     <figcaption>
-        A qualitative comparison across difference methods on untrained sequence from UMA_VI. We found that the AirLine and LSD methods performed better than the LETR and LCNN in generating detailed line detections.
+        The following video demonstrates a qualitative comparison across difference methods on untrained sequence from UMA_VI. We found that the AirLine and LSD methods performed better than the LETR and LCNN in generating detailed line detections.
         Moreover, AirLine is preferred over LSD since it is able to merge the two sides of thin lines, while LSD tends to detect both sides.
         Though LCNN produces lines of high precision, it is not suitable for tasks that require detailed line inputs, as it tends to ignore short lines and connect two unrelated endpoints in complex environments. LETR, which performed the best under the endpoint precision mentioned in its original paper, was found to have the worst line quality in terms of precision, stability, and reasonable geometry. 
     </figcaption>
