@@ -36,7 +36,7 @@ As shown above, AirLine is a learnable edge-based line detection architecture th
 </figure>
 By using edge-based learning line detection methods, AirLine has achieved state-of-art-level precision and significant efficiency and runtime boost.
 <figure>
-    <img src="/img/wffig.png"><img src="/img/yufig.png"/>
+    <img src="/img/wffig.png" width=48%><img src="/img/yufig.png" width=48%/>
 </figure>
 
 
