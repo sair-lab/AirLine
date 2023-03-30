@@ -14,7 +14,9 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
     </figcaption>
     <img src="/img/vsLSD.gif" />
     <figcaption>
-        A qualitative comparison across difference methods on untrained sequence from UMA_VI.
+        A qualitative comparison across difference methods on untrained sequence from UMA_VI. We found that the AirLine and LSD methods performed better than the LETR and LCNN in generating detailed line detections.
+        Moreover, AirLine is preferred over LSD since it is able to merge the two sides of thin lines, while LSD tends to detect both sides.
+        Though LCNN produces lines of high precision, it is not suitable for tasks that require detailed line inputs, as it tends to ignore short lines and connect two unrelated endpoints in complex environments. LETR, which performed the best under the endpoint precision mentioned in its original paper, was found to have the worst line quality in terms of precision, stability, and reasonable geometry. 
     </figcaption>
     <img src="/img/qualitativecomp.gif" />
     
