@@ -8,7 +8,7 @@ Line detection is widely used in many robotic tasks such as scene recognition, 3
         <source src="/img/demo.mp4" type="video/mp4">
     </video>
 </div>
-<
+
 <figure>
     <img src="/img/cp2.png" />
     <figcaption>
