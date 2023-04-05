@@ -1,38 +1,4 @@
-# AirLine - using demo code
-1. download unet and dexiNed [checkpoints](https://drive.google.com/drive/folders/11TQxJjpBoZVKcQ0Pmb6GH3h0qQk4CnNe?usp=sharing) and put it in the checkpoints folder
-2. specify if using Unet or Dexined using variable _usingUnet_ in AirLine_demo.py, we recommand using dexiNed.
-3. specify _sequencePath_ which should be a directory containing image sequence to test on.
-3. run Airline_demo.py in any way you want.
 
-youtube [demo video](https://youtu.be/EKDx3Z9qYUQ)
-
-note: This code may have issue running on MacOS given dependency of dll libraries
-
-# AirLine - run testing
-*If you wish to run testing, download [test set](https://drive.google.com/drive/folders/1uprorwuIq8vOKYElQ27MLTw_f8W2sIoW?usp=sharing) and set up the directory which should look like:
-
-    ├──AirLine
-        ├── checkpoints
-        │   ├── unet.pth
-        │   └── dexi.pth
-        ├── datasets
-        │   ├── Wireframe
-        │   │   ├── gt
-        │   │   │   ├── xxxxx.jpg
-        │   │   │   └── xxxxx.jpg
-        │   │   └── data
-        │   │       ├── xxxxx.jpg
-        │   │       └── xxxxx.jpg
-        │   └── YorkUrban
-        │       ├── gt
-        │       │   ├── xxxxx.jpg
-        │       │   └── xxxxx.jpg
-        │       └── data
-        │           ├── xxxxx.jpg
-        │           └── xxxxx.jpg
-        ...
-
-after specifying variable _dataset_ to be "Wireframe" or "YorkUrban" and then run AirLine-test.py.
 
 # Abstract
 
@@ -76,8 +42,18 @@ By using edge-based learnable line detection approaches, AirLine has achieved st
 </figure>
 
 
-## Video & Source Code
+## Watch Video
 
-* **[Youtube](https://www.youtube.com/watch?v=EKDx3Z9qYUQ)**
-* **[AirLine](https://github.com/sair-lab/AirLine)**
+[<img src="https://user-images.githubusercontent.com/8695500/230144893-ece19d0f-77bf-431b-8cb4-605ff2d897eb.png" width="40%">](https://youtu.be/EKDx3Z9qYUQ)
 
+## Publication
+
+```bibtex
+@article{lin2023airline,
+  title = {{AirLine}: Efficient Learnable Line Detection with Local Edge Voting},
+  author = {Lin, Xiao and Wang, Chen},
+  journal = {arXiv preprint arXiv:2303.16500},
+  year = {2023}
+}
+```
+You may also [download this paper](https://arxiv.org/abs/2303.16500).
