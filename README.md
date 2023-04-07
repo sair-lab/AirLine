@@ -1,3 +1,5 @@
+IMPORTANT: MacOS, Linux not supported, only Windows for now
+
 # AirLine - using demo code
 1. download unet and dexiNed [checkpoints](https://drive.google.com/drive/folders/11TQxJjpBoZVKcQ0Pmb6GH3h0qQk4CnNe?usp=sharing) and put it in the checkpoints folder
 2. specify if using Unet or Dexined using variable _usingUnet_ in AirLine_demo.py, we recommand using dexiNed.
