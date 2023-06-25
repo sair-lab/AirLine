@@ -85,10 +85,10 @@ By using edge-based learnable line detection approaches, AirLine has achieved st
 ## Publication
 
 ```bibtex
-@article{lin2023airline,
+@inproceedings{lin2023airline,
   title = {{AirLine}: Efficient Learnable Line Detection with Local Edge Voting},
   author = {Lin, Xiao and Wang, Chen},
-  journal = {arXiv preprint arXiv:2303.16500},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   year = {2023}
 }
 ```
