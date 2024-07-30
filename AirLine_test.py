@@ -6,7 +6,7 @@ import CRG311 as crg
 import numpy as np
 import cv2
 import os
-
+from PIL import Image
 from deximodel import DexiNed
 import timeit
 
@@ -135,13 +135,13 @@ if __name__ == '__main__':
         
         edgeNp=(edgeNp>config["edgeThresh"]).astype(np.uint8)*255
 
-        cv2.imshow('edge',edgeNp)
+        #cv2.imshow('edge',edgeNp)
 
         
         rawLineNum=crg.desGrow(outMap,edgeNp,ODes[0].detach().cpu().numpy(),out,config["simThresh"],config["pixelNumThresh"],tempMem,tempMem2,tempMem3,THETARESOLUTION)# in this model and configuration, we use 0.7 as the threshold
 
-
-        cv2.imshow('seg',outMap)# display the segmentation result
+        Image.fromarray(outMap).save("outMap.png")
+        #cv2.imshow('seg',outMap)# display the segmentation result
         puredetection=np.zeros_like(rx1[:,:,0],dtype=np.uint8)
 
         out=(out).astype(np.int32)
