@@ -1,2 +1,0 @@
-Please note that python 3.8 might be required to use my compiled CRG module.
-If you wish to use with other python version you might need to build again (for further help please raise an issue), the Visual Studio solution is also provided in CRG.
