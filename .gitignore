@@ -132,3 +132,5 @@ datasets/*
 *.exp
 *.lib
 *.pdb
+
+CRG/.vs/*

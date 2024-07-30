@@ -57,7 +57,7 @@ if __name__ == '__main__':
     if dataset=="yorkurban":
         path='Datasets\\YorkUrban'
         edgeDetector=DexiNed().cuda(0)
-        edgeDetector.load_state_dict(torch.load('checkpoints//dexi.pth'))
+        edgeDetector.load_state_dict(torch.load('dexi.pth'))
         usingUnet=0
         config={
             "edgeThresh":0,
