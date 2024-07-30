@@ -101,9 +101,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='new|x64'">
     <OutDir>..</OutDir>
     <TargetExt>.pyd</TargetExt>
-    <IncludePath>D:\Python38\Lib\site-packages\torch\include\pybind11;D:\Python38\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Python38\libs;$(LibraryPath)</LibraryPath>
-    <TargetName>CRG</TargetName>
+    <IncludePath>C:\Users\X\AppData\Local\Programs\Python\Python311\Lib\site-packages\pybind11\include;C:\Users\X\AppData\Local\Programs\Python\Python311\include;C:\Users\X\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\include\torch\csrc\api\include\;C:\Users\X\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\include;C:\Users\X\AppData\Local\Programs\Python\Python311\Lib\site-packages\pybind11\include\pybind11;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\X\AppData\Local\Programs\Python\Python311\libs;$(LibraryPath)</LibraryPath>
+    <TargetName>CRG311</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -167,8 +167,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='new|x64'">
     <Link>
-      <AdditionalDependencies>python3.lib;python38.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(ProjectDir)/CRG.pyd</OutputFile>
+      <AdditionalDependencies>python3.lib;python311.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)/CRG311.pyd</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
