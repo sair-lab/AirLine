@@ -290,7 +290,7 @@ int DesGrow1(py::array_t<uint8_t> edge, py::array_t<int> usedMap, py::array_t<fl
 	return lineNum;
 }
 
-PYBIND11_MODULE(CRG, m) {
+PYBIND11_MODULE(CRG311, m) {
 	//py::register_exception<std::exception>(m, "PyExp");
 	m.doc() = "pybind11 example plugin"; // optional Bmodule docstring
 

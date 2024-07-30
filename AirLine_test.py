@@ -2,7 +2,7 @@
 from timeit import timeit
 import torch
 from unet import *
-import CRG.extractC.CRG as crg
+import CRG311 as crg
 import numpy as np
 import cv2
 import os
