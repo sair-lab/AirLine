@@ -1,4 +1,5 @@
-IMPORTANT: MacOS, Linux not supported, only Windows for now
+IMPORTANT: CRG module compiled for Python 3.11 windows, linux and macos please follow pybind11 tutorial.
+cpp file is in CRG/extractC.
 
 # AirLine - using demo code
 1. download unet and dexiNed [checkpoints](https://drive.google.com/drive/folders/11TQxJjpBoZVKcQ0Pmb6GH3h0qQk4CnNe?usp=sharing) and put it in the checkpoints folder
@@ -7,8 +8,6 @@ IMPORTANT: MacOS, Linux not supported, only Windows for now
 3. run Airline_demo.py in any way you want.
 
 youtube [demo video](https://youtu.be/EKDx3Z9qYUQ)
-
-note: This code may have issue running on MacOS given dependency of dll libraries
 
 # AirLine - run testing
 *If you wish to run testing, download [test set](https://drive.google.com/drive/folders/1uprorwuIq8vOKYElQ27MLTw_f8W2sIoW?usp=sharing) and set up the directory which should look like:
