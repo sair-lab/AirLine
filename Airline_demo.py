@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 from unet import *
 import os
-import CRG.extractC.CRG as crg
+import CRG311 as crg
 # import the C++ library for CRG and line parameterization
 
 from deximodel import DexiNed
